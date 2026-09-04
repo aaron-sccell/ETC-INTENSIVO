@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Clínica",
+    "slug": "clinica-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "clinica",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#6C5CE7",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.upq.clinicamobile",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "La app necesita acceso a tus fotos para adjuntar imágenes al expediente del paciente."
+      }
+    },
+    "android": {
+      "package": "com.upq.clinicamobile",
+      "edgeToEdgeEnabled": true,
+      "adaptiveIcon": {
+        "backgroundColor": "#6C5CE7"
+      },
+      "permissions": ["READ_MEDIA_IMAGES", "SCHEDULE_EXACT_ALARM"]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#6C5CE7"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "La app necesita acceso a tus fotos para adjuntar imágenes al expediente del paciente."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
+    }
+  }
+}
